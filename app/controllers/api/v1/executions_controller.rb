@@ -9,8 +9,8 @@ class Api::V1::ExecutionsController < ApplicationController
   end
   
   def update
-    if @player.update(player_params)
-      render json: @player
+    if @player.update(player_params.merge(user: current_user))
+      render json: Api::V1::PlayerSerializer.new(@player, include: [:movie]).serialized_json
     else
       render json: { errors: @player.errors.full_messages }, status: :unprocessable_entity
     end
