@@ -51,8 +51,9 @@ Review.create(rating: 5, description: 'Just when I thought I was out, they pull 
 
 
 # Favorites
-Favorite.create(favoritable: Movie.all[0], user: user1)
-Favorite.create(favoritable: Movie.all[1], user: user1)
-Favorite.create(favoritable: Movie.all[2], user: user1)
-Favorite.create(favoritable: Movie.all[3], user: user1)
-Favorite.create(favoritable: Movie.all[4], user: user1)
+Favorite.create(favoritable: Movie.all[9], user: user1)
+Favorite.create(favoritable: Movie.all[8], user: user5)
+Favorite.create(favoritable: Movie.all[7], user: user2)
+Favorite.create(favoritable: Movie.all[4], user: user3)
+Favorite.create(favoritable: Movie.all[5], user: user4)
+Favorite.create(favoritable: Movie.all[5], user: user1)

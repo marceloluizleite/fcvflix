@@ -1,8 +1,10 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+# Versão Ruby
 ruby '2.4.0'
-
+# Webpacker
+gem 'webpacker'
 # AWS
 gem "aws-sdk-s3"
 # Autenticação
